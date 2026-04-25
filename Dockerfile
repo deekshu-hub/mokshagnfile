@@ -1,2 +1,4 @@
 FROM alpine:latest
-CMD ["echo", "PRT – CI/CD Completed Successfully"]
+COPY app.sh /app.sh
+RUN chmod +x /app.sh
+CMD ["/app.sh"]
