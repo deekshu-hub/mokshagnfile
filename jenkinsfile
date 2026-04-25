@@ -24,7 +24,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh "docker run -itd --name m2 -p 80:80 my-img"
+                    sh "docker run -itd --name m3 -p 80:80 my-img"
                 }
             }
         }
