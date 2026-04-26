@@ -16,7 +16,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker build -t my-imgs ."
+                    sh "docker build -t my-imges ."
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh "docker run -itd --name m4 -p 80:80 my-imgs"
+                    sh "docker run -itd --name moksha -p 80:80 my-imges"
                 }
             }
         }
